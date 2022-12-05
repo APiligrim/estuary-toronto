@@ -21,7 +21,7 @@ function Home(props) {
   }, []);
 
   return (
-    <App title="Estuary Toronto" description="Estuary in Toronto" url="">
+    <App title="Estuary Party in Toronto" description="Estuary party Toronto" url="">
       <div className={styles.center}>
         <EventPage />
       </div>
