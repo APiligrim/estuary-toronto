@@ -1,0 +1,32 @@
+.container{
+    background: var(--main-page-background-dark-mode);
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background: #EEEEEE;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 3;
+    height: 70vh;
+    display: grid;
+    row-gap: 80px;
+}
+
+.column{
+    flex-grow: 1;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.heading2{
+    font-family: 'Parabole';
+    margin-bottom: 12px;
+    letter-spacing: .1rem;
+    color: var(--color-green)
+}
+
+// .caption{
+//     font-family: Mono;
+//     color: gray;
+// }

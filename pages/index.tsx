@@ -5,6 +5,7 @@ import * as Requests from '@common/requests';
 import * as Utilities from '@common/utilities';
 
 import App from '@components/App';
+import EventPage from '@root/components/EventPage';
 
 function Home(props) {
   // NOTE(jim):
@@ -20,9 +21,9 @@ function Home(props) {
   }, []);
 
   return (
-    <App title="Example" description="This is a website template" url="">
+    <App title="Estuary Toronto" description="Estuary in Toronto" url="">
       <div className={styles.center}>
-        <p className={styles.paragraph}>From here, you can start any project you like.</p>
+        <EventPage />
       </div>
     </App>
   );

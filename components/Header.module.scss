@@ -1,0 +1,11 @@
+.container{
+    height: 55vh;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 3;
+}
+
+.canvas{
+    // height: 80vh;
+    background: var(--color-green);
+}
