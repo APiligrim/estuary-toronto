@@ -3,10 +3,7 @@ import styles from '@components/Navbar.module.scss';
 import { BreakpointEnum, useBreakpoint } from '@root/pages/utils/use-breakpoint';
 import * as React from 'react';
 
-const navItems = [
-  { name: 'Event Details', href: '#apply' },
-  { name: 'Apply Now', href: '#apply' },
-];
+const navItems = [{ name: 'Apply Now', href: '/apply' }];
 
 function MobileNav({ navItems }) {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -46,10 +43,7 @@ function MobileNav({ navItems }) {
 function DesktopNav({ navItems }) {
   return (
     <div className={styles.navbar}>
-      <a style={{ color: 'black', fontFamily: 'Parabole', fontSize: '34px', letterSpacing: '.1rem' }}> ✦ ESTUARY ✦</a>
-      {/* <a className={styles.logoDesktop} href="https://estuary.tech/" target="_blank">
-        <EstuarySVG height="64px" color="var(--text-white)" className={styles.logo} />
-      </a> */}
+      <a style={{ color: 'var(--color-green)', fontFamily: 'Parabole', fontSize: '34px', letterSpacing: '.1rem' }}> ✦ ESTUARY.TECH ✦</a>
 
       <ul className={styles.navMenu}>
         {navItems.map((item, index) => {
@@ -68,7 +62,7 @@ function DesktopNav({ navItems }) {
 
 function Navbar(props: any) {
   return (
-    <nav className={styles.stickyNavbar} style={{}}>
+    <nav className={styles.stickyNavbar}>
       <MobileNav navItems={navItems} />
       <DesktopNav navItems={navItems} />
     </nav>

@@ -7,9 +7,7 @@
   
   .navbar{
     align-items: center;
-    background: var(--color-green);
-    // background: var(--main-page-background-dark-mode);
-    //border-bottom: 1px dashed var(--text-space-gray);
+    background: var(--text-black);
     display: flex;
     justify-content: space-between;
     min-height: 70px;
@@ -41,12 +39,11 @@
   .navLink{
     list-style: none;
     text-decoration: none;
-    //color: var(--text-white);
     transition: 0.7s ease;
-    color: var(--text-black);
+    color: var(--color-green);
 
     @media(max-width:768px){
-      color: var(--text-white);
+      color: var(--color-green);
     }
   }
   
