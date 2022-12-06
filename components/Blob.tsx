@@ -36,7 +36,8 @@ export default function Blob({
 
   return (
     <group {...props} >
-      <Sphere
+ 
+      <Sphere  
         castShadow
         onPointerEnter={() => (strength.current = 0.2)}
         onPointerLeave={() => (strength.current = 0)}
@@ -45,7 +46,7 @@ export default function Blob({
       >
         <LayerMaterial
           color={'#ffffff'}
-          lighting={'physical'} //
+          lighting={'physical'} 
           transmission={1}
           roughness={0.1}
           thickness={2}

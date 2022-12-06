@@ -29,9 +29,12 @@ export default () => {
 
   // raf loop
   useFrame(() => {
+    // @ts-ignore
+
     mesh.current.rotation.y += 0.01 * timeMod;
     if (isActiveRef.current) {
       time.current += 0.03;
+      // @ts-ignore
       mesh.current.position.y = position[1] + Math.sin(time.current) * 0.4;
     }
   });

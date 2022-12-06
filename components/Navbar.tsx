@@ -1,7 +1,7 @@
 import EstuarySVG from '@root/components/EstuarySVG';
 import styles from '@components/Navbar.module.scss';
-import { BreakpointEnum, useBreakpoint } from '@root/pages/utils/use-breakpoint';
 import * as React from 'react';
+import { BreakpointEnum, useBreakpoint } from './utils/use-breakpoint';
 
 const navItems = [{ name: 'Apply Now', href: '/apply' }];
 
