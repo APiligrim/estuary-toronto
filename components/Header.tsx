@@ -1,18 +1,13 @@
-import * as THREE from 'three';
-import React, { Suspense, useState } from 'react';
-import { Canvas } from '@react-three/fiber';
 import styles from '@components/Header.module.scss';
+import { Physics } from '@react-three/cannon';
 import { OrbitControls } from '@react-three/drei';
-import Shape from './Shape';
-import Footer from './Footer';
-import Experience from './Experience';
+import { Canvas } from '@react-three/fiber';
+import { Suspense, useState } from 'react';
+import Blob from './Blob';
 import Floor from './Floor';
 import Marble from './Marble';
-import { Debug, Physics } from '@react-three/cannon';
-import Blob from './Blob';
-import Sphere from './Sphere';
-import LogoTag from './SocialTag';
 import SocialTag from './SocialTag';
+import Sphere from './Sphere';
 
 function Header(props: any) {
   const [loaded, setLoaded] = useState(false);

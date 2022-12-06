@@ -1,7 +1,7 @@
 import { PlaneProps, usePlane } from '@react-three/cannon';
 
 export default function Floor(props: PlaneProps) {
-  const [ref] = usePlane(() => ({ rotation: [-Math.PI / 2, 0, 0], position: [0, -2.27, 0] }));
+  const [ref] = usePlane(() => ({ rotation: [-Math.PI / 2, 0, 0], position: [0, -2.2, 0] }));
   return (
     // @ts-ignore
     <mesh ref={ref} receiveShadow>
