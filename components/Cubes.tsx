@@ -8,6 +8,7 @@ export default () => {
   const group = useRef();
 
   useFrame(() => {
+    // @ts-ignore
     group.current.rotation.y += 0.005;
   });
 

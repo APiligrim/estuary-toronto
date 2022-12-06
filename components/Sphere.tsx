@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 import { useTexture } from '@react-three/drei';
 import { useFrame } from 'react-three-fiber';
-import { useSphere } from '@react-three/cannon';
 
 export default () => {
   const Sphere = () => {
@@ -10,6 +9,7 @@ export default () => {
     const base = useTexture({ map: 'estuary.png' });
 
     useFrame(({ clock }) => {
+      // @ts-ignore
       ref.current.rotation.y += -0.004;
     });
 
