@@ -1,5 +1,4 @@
 import React from 'react';
-import { Input } from 'theme-ui';
 import style from '@components/Apply.module.scss';
 import EventInformation from './EventInformation';
 import Button from './Button';
@@ -13,14 +12,6 @@ export default function Apply() {
       </div>
 
       <div className={style.formContainer}>
-        <Input placeholder="Full Name" />
-        <Input placeholder="Email" />
-
-        <Input placeholder="Twitter" />
-        <Input placeholder="Linkedin" />
-
-        <Input placeholder="Message" />
-
         <div className={style.actions}>
           <Button>Submit</Button>
         </div>
