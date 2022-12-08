@@ -1,0 +1,109 @@
+.group {
+  padding: 24px 24px 88px 24px;
+  max-width: 768px;
+  @media(max-width: 768px) {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+.title {
+  font-size: 16px;
+  margin-top: 16px;
+  opacity: 0.8;
+  margin-bottom: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  max-width: 80%;
+  color:white;
+
+  @media(max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.action {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 24px;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+
+.group {
+    background: black;
+    border-radius: 12;  
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    @media(max-width: 1050px) {
+       display: flex;
+       flex-direction: column;
+    }
+}
+
+.graphicContainer{
+    grid-column: span 2;
+    background: black;
+    overflow: hidden
+}
+
+.imageContainer{
+    height: 90vh;
+    padding-left: 10vw;
+    position: fixed;
+    bottom: 20px;
+
+    @media(max-width: 1050px) {
+        height: 30vh;
+        padding-left: 0;
+        padding: 0;
+        position: relative;
+        bottom: 0px;
+
+     }
+}
+
+.imageGraphic{
+    object-fit: cover; 
+    width: 100%; 
+    height: 100%;
+}
+
+.eventDetailHeading{
+    color: var(--color-green);
+    font-family: "Parabole";
+    letter-spacing: 0.1rem;
+}
+
+.caption{
+    font-family: 'Mono';
+    color: white;
+    font-size: 12px;
+}
+
+.eventDetailsGrid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.eventInformationCaption{
+    max-width: 90%;    
+}
+
+.mainHeading{
+    margin-top: 22;
+    font-family: 'Parabole';
+    color: var(--color-green);
+
+    @media(max-width: 768px) {
+       font-size: 12px;
+     }
+}

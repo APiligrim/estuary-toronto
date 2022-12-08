@@ -2,8 +2,9 @@ import EstuarySVG from '@root/components/EstuarySVG';
 import styles from '@components/Navbar.module.scss';
 import * as React from 'react';
 import { BreakpointEnum, useBreakpoint } from './utils/use-breakpoint';
+import Button from './Button';
 
-const navItems = [{ name: 'Apply Now', href: '/apply' }];
+const navItems = [{ name: 'Apply for an Invite', href: '/apply' }];
 
 function MobileNav({ navItems }) {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -43,17 +44,33 @@ function MobileNav({ navItems }) {
 function DesktopNav({ navItems }) {
   return (
     <div className={styles.navbar}>
-      <a style={{ color: 'var(--color-green)', fontFamily: 'Parabole', fontSize: '34px', letterSpacing: '.1rem' }}> ✦ ESTUARY.TECH ✦</a>
+      <a href={'/'} style={{ textDecoration: 'none', color: 'var(--color-green)', fontFamily: 'Parabole', fontSize: '28px', letterSpacing: '.1rem', cursor: 'pointer' }}>
+        ✦ estuary.tech/party ✦
+      </a>
 
       <ul className={styles.navMenu}>
         {navItems.map((item, index) => {
-          return (
-            <li key={index} className={styles.navItem}>
-              <a className={styles.navLink} href={`${item.href}`}>
-                {item.name}
-              </a>
-            </li>
-          );
+          if (navItems.length > 1) {
+            return (
+              <>
+                <li key={index} className={styles.navItem}>
+                  <a className={styles.navLink} href={`${item.href}`}>
+                    {item.name}
+                  </a>
+                </li>
+              </>
+            );
+          } else {
+            return (
+              <>
+                <Button className={styles.navItem}>
+                  <a style={{ textDecoration: 'none', color: 'black' }} href={`${item.href}`}>
+                    {item.name}
+                  </a>
+                </Button>
+              </>
+            );
+          }
         })}
       </ul>
     </div>
