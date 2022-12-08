@@ -1,0 +1,62 @@
+.container{
+    position: absolute;
+    bottom: 40px;
+    font-family: "Mono";
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+    border-radius: 28px;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        bottom:0px;
+        padding-left: 0vw;
+        padding-right: 0vw;
+        justify-content: center;
+    }
+}
+
+.letter{
+    background: white;
+    padding: 24px;
+    border-radius: 4px;
+    border: 2px solid var(--color-green);
+    @media (max-width: 768px) {
+        padding: 4px;
+        border-radius:0px;
+    }
+}
+
+.close{
+    margin-bottom:12px;
+    background: var(--color-green);
+    color: black;
+    border-style: none;
+    font-size: 24px;
+    border-radius: 4px;
+}
+
+.letterMessage{
+    display: grid;
+    padding: 20px;
+    row-gap: 12px;
+    background: white;
+    border-radius: 4px;
+
+    @media (max-width: 768px) {
+        padding: 5vw;
+        border-radius:0px;
+    }
+}
+
+.letterText{
+    font-size: 16px;
+    max-width: 75ch;
+    @media (max-width: 768px) {
+        font-size: 12px;
+    }
+}

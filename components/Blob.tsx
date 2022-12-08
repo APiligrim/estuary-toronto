@@ -5,7 +5,6 @@ import { useMemo, useRef } from 'react'
 import { MathUtils, Mesh, Vector3 } from 'three'
 import { Displace as DisplaceType } from 'lamina/vanilla'
 import { DisplaceProps } from 'lamina/types'
-import { random } from 'lodash';
 
 export default function Blob({
   displaceProps,
@@ -42,7 +41,7 @@ export default function Blob({
         onPointerEnter={() => (strength.current = 0.2)}
         onPointerLeave={() => (strength.current = 0)}
         ref={ref}
-        args={[0.4, 128, 128]}
+        args={[0.7, 128, 128]}
       >
         <LayerMaterial
           color={'#ffffff'}

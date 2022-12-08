@@ -1,8 +1,5 @@
 import styles from '@components/App.module.scss';
-
 import * as React from 'react';
-import * as Requests from '@common/requests';
-import * as Utilities from '@common/utilities';
 
 import App from '@components/App';
 import EventPage from '@root/components/EventPage';

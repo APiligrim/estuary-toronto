@@ -1,28 +1,17 @@
-import { useLayoutEffect, useState } from 'react';
-import { useSphere } from '@react-three/cannon';
 import { useTexture } from '@react-three/drei';
+import { useLayoutEffect } from 'react';
 
-export default function Marble({ setLoaded }: { setLoaded: any }) {
-  const [number] = useState(50);
-  const base = useTexture({ map: 'filecoin.png' });
-
-  const [ref] = useSphere(() => ({
-    args: [0.1],
-    mass: 1,
-    position: [Math.random() - 0.5, Math.random() * 2 + 4, Math.random() - 0.5],
-  }));
+export default function Marble({ setLoaded, marblesCount, ref }: { setLoaded: any, marblesCount: any, ref: any }) {
+  const base = useTexture({ map: 'filecoingreen.png' });
 
   useLayoutEffect(() => {
     setLoaded(true);
   }, []);
 
   return (
-    <group>
-      <instancedMesh castShadow ref={ref} args={[undefined, undefined, number]}>
-        <sphereBufferGeometry args={[0.2, 128, 128]} />
-
-        <meshStandardMaterial {...base} attach="material" roughness={0.5} metalness={0.2} />
-      </instancedMesh>
-    </group>
+    <instancedMesh mass={4} castShadow receiveShadow ref={ref} args={[null, null, marblesCount]}>
+      <sphereBufferGeometry args={[0.2, 128, 128]} />
+      <meshStandardMaterial {...base} attach="material" roughness={0.5} metalness={0.2} />
+    </instancedMesh>
   );
 }
