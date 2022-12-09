@@ -52,22 +52,25 @@
 .graphicContainer{
     grid-column: span 2;
     background: black;
-    overflow: hidden
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media(max-width: 1050px) {
+        height: 100%;
+     }
 }
 
 .imageContainer{
-    height: 90vh;
-    padding-left: 10vw;
-    position: fixed;
-    bottom: 20px;
+    height: 100%;
+    width: 80%;
 
     @media(max-width: 1050px) {
         height: 30vh;
         padding-left: 0;
         padding: 0;
-        position: relative;
-        bottom: 0px;
-
+        display: block;
+        width: 100%;
      }
 }
 
@@ -106,4 +109,16 @@
     @media(max-width: 768px) {
        font-size: 12px;
      }
+}
+
+.successContainer{
+    height: 100vh;
+}
+
+.eventInformation {
+    margin-top: 80px;
+
+    @media(max-width: 768px) {
+        margin-top: 40px;
+    }
 }

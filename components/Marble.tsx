@@ -9,7 +9,7 @@ export default function Marble({ setLoaded, marblesCount, ref }: { setLoaded: an
   }, []);
 
   return (
-    <instancedMesh mass={4} castShadow receiveShadow ref={ref} args={[null, null, marblesCount]}>
+    <instancedMesh castShadow receiveShadow ref={ref} args={[null, null, marblesCount]}>
       <sphereBufferGeometry args={[0.2, 128, 128]} />
       <meshStandardMaterial {...base} attach="material" roughness={0.5} metalness={0.2} />
     </instancedMesh>
