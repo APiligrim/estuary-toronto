@@ -36,18 +36,19 @@ function ApplyPage(props) {
       <Banner />
       <div className={styles.formContainer}>
         {state.success ? (
-          <div className={U.classNames(styles.group, rstyles.block)}>
+          <div className={U.classNames(styles.group, rstyles.block, styles.successContainer)}>
             <h1 style={{ marginTop: 22 }}>Thank you!</h1>
             <p style={{ color: 'white' }}>Thank you for submitting this form! We will respond to you within 48 hours if you have been invited :-) </p>
           </div>
         ) : (
           <div className={styles.gridContainer}>
             <div className={styles.graphicContainer}>
-              <a href="/">
-                <div className={styles.imageContainer}>
+              <div className={styles.imageContainer}>
+                <a href="/" style={{ height: ' 100%', width: '100%', position: 'sticky', top: '0' }}>
+                  {' '}
                   <img className={styles.imageGraphic} src="https://user-images.githubusercontent.com/28320272/206462622-c35f7a1f-6472-4358-afb4-00849760977c.png" />
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
             <div className={U.classNames(styles.group, rstyles.block)} style={{ gridColumn: 'span 2/5' }}>
               <div className={styles.eventInformation}>
@@ -122,7 +123,7 @@ function ApplyPage(props) {
                   name="linkedin"
                 />
 
-                <div className={styles.title}>Tell us about yourself and why you are interested in joining the party (Max: 5000 characters)</div>
+                <div className={styles.title}>Tell us about yourself and why you are interested in joining the party</div>
                 <Textarea
                   style={{ marginTop: 8 }}
                   value={state.message}

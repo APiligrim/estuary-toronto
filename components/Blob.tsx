@@ -35,7 +35,6 @@ export default function Blob({
 
   return (
     <group {...props} >
- 
       <Sphere  
         castShadow
         onPointerEnter={() => (strength.current = 0.2)}

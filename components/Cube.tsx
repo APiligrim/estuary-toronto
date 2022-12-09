@@ -57,7 +57,7 @@ export default () => {
   );
 
   return (
-    <mesh ref={mesh} position={position} onClick={(e) => onClick(e)} onPointerOver={(e) => onHover(e, true)} onPointerOut={(e) => onHover(e, false)}>
+    <mesh ref={mesh} onClick={(e) => onClick(e)} onPointerOver={(e) => onHover(e, true)} onPointerOut={(e) => onHover(e, false)}>
       <boxBufferGeometry attach="geometry" args={[0.047, 0.5, 0.29]} />
       <meshStandardMaterial attach="material" color={color} roughness={0.6} metalness={0.1} />
     </mesh>

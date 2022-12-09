@@ -1,5 +1,5 @@
 import styles from '@components/Header.module.scss';
-import { Float, MeshReflectorMaterial, OrbitControls, Text } from '@react-three/drei';
+import { Float, MeshReflectorMaterial, OrbitControls, Text, Text3D } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { InstancedRigidBodies, Physics, RigidBody } from '@react-three/rapier';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -17,7 +17,7 @@ function Header(props: any) {
   useEffect(() => {
     setTimeout(() => {
       setTimedPopup(true);
-    }, 5000);
+    }, 7000);
   }, []);
 
   const marbles = useRef();
@@ -57,11 +57,11 @@ function Header(props: any) {
         <directionalLight castShadow position={[1, 2, 3]} intensity={0.8} />
         <ambientLight intensity={0.2} color="green" />
         <Float>
-          <Text color="limegreen" textAlign="center" maxWidth={8} fontSize={0.2} position-y={3} font={font}>
+          <Text color="limegreen" textAlign="center" maxWidth={8} fontSize={0.2} position-y={3} font="/Parabole_Regular.json">
             {' '}
             January 24th, 2023
           </Text>
-          <Text color="limegreen" textAlign="center" maxWidth={8} fontSize={0.2} position-y={2.5} font="Parabole">
+          <Text color="limegreen" textAlign="center" maxWidth={8} fontSize={0.2} position-y={2.5} font="/Parabole_Regular.json">
             {' '}
             7pm - 10pm EST @ CLIO, Toronto
           </Text>
@@ -74,7 +74,7 @@ function Header(props: any) {
           <Blob position={[-3, 0, 7]} />
           <Blob position={[4, 1, -2]} />
 
-          <InstancedRigidBodies mass={5} colliders="ball" positions={marbleTransforms.positions} rotations={marbleTransforms.rotations} scale={marbleTransforms.scales}>
+          <InstancedRigidBodies mass={5} colliders="ball" positions={marbleTransforms.positions} rotations={marbleTransforms.rotations} scales={marbleTransforms.scales}>
             <Marble ref={marbles} marblesCount={marblesCount} setLoaded={setLoaded} />
           </InstancedRigidBodies>
 
@@ -85,7 +85,7 @@ function Header(props: any) {
           <RigidBody type="fixed">
             <mesh receiveShadow position-y={-1.7} rotation-x={-Math.PI * 0.5} scale={500}>
               <planeGeometry />
-              <MeshReflectorMaterial color="black" resolution={512} blur={[1000, 1000]} mixBlur={1} />
+              <MeshReflectorMaterial mirror={3} color="black" resolution={512} blur={[1000, 1000]} mixBlur={1} />
             </mesh>
           </RigidBody>
         </Physics>

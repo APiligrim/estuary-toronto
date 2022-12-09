@@ -12,7 +12,7 @@ export const send = ({ name, email, twitter, linkedin, message, webhook }) => {
   }
   try {
     webhook.send({
-      text: `\n*Name:* ${name}\n*Email:* ${email}\n*Twitter:* ${twitterURL}\n${linkedinURL}\n*Message:* ${message}\n*Message:* ${message}`,
+      text: `\n*Name:* ${name}\n*Email:* ${email}\n*Twitter:* ${twitterURL}\n${linkedinURL}\n*Message:* ${message}`,
     });
     return true;
   } catch (e) {
