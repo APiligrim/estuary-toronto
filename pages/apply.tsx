@@ -25,8 +25,8 @@ function ApplyPage(props) {
 
   return (
     <App
-      title="Estuary.Tech Party: Get an Invite"
-      description="Fill out this form to receive an invite to the Estuary.Tech/Party."
+      title="Party.Estuary.Tech: Get an Invite"
+      description="Fill out this form to receive an invite to the Party.Estuary.Tech."
       url="https://docs.estuary.tech/get-invite-key"
       curl={curl}
       markdown={markdown}

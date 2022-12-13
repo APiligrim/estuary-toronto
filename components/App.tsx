@@ -14,7 +14,7 @@ export default function App(props) {
         <meta property="og:url" content={props.url} />
         <meta property="og:title" content={props.title} />
         <meta property="og:description" content={props.description} />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content={props.image} />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content={props.url} />
