@@ -18,7 +18,11 @@ function Home(props) {
   }, []);
 
   return (
-    <App title="Estuary Party in Toronto" description="Estuary party Toronto" url="">
+    <App
+      title="Party.Estuary.Tech in Toronto"
+      description="You are cordially invited to an exclusive party celebrating the success of Estuary, the easiest way to put and get your data from Filecoin, the largest decentralized storage network in the world"
+      url=""
+    >
       <div className={styles.center}>
         <EventPage />
       </div>
