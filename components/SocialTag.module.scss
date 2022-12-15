@@ -1,19 +1,17 @@
 .copy {
-    position: absolute;
-    bottom: 40px;
-    font-family: "Mono";
-    right: 0;
-    width: 100%;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
+  position: absolute;
+  bottom: 40px;
+  font-family: 'Mono';
+  right: 0;
+  width: 100%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    @media (max-width: 768px){
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-
+  @media (max-width: 768px) {
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
+}

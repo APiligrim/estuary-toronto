@@ -42,6 +42,7 @@ function Header(props: any) {
   return (
     <div className={styles.container}>
       <Canvas
+        style={{ position: 'absolute' }}
         className={styles.canvas}
         camera={{
           position: [-674.32, 401.86, 878.18],

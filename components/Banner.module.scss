@@ -1,51 +1,50 @@
-.banner{
+.banner {
   background: black;
   border-top: 1px solid var(--color-green);
   border-bottom: 1px solid var(--color-green);
   color: var(--color-green);
-  height: 40px;
-  
-  font-family: "Parabole";
+  height: 5vh;
+  font-family: 'Parabole';
   overflow: hidden;
   gap: 20px;
   position: relative;
 }
 
-.scrollingText{
+.scrollingText {
   width: inherit;
   height: inherit;
   position: absolute;
   white-space: nowrap;
-  left:0%;
-  top:0%;
+  left: 0%;
+  top: 0%;
   display: flex;
   align-items: center;
   justify-content: center;
   animation: primary 9s linear infinite;
 }
 
-.primary{
+.primary {
   animation: primary 9s linear infinite;
 }
 
-.secondary{
+.secondary {
   animation: secondary 9s linear infinite;
 }
 
-@keyframes primary{
-  from{
-    left:0%;
+@keyframes primary {
+  from {
+    left: 0%;
   }
-  to{
-    left:-100%;
+  to {
+    left: -100%;
   }
 }
 
-@keyframes primary{
-  from{
-    left:100%;
+@keyframes primary {
+  from {
+    left: 100%;
   }
-  to{
-    left:0%;
+  to {
+    left: 0%;
   }
 }
