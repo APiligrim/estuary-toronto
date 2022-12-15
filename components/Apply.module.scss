@@ -1,7 +1,7 @@
 .group {
   padding: 24px 24px 88px 24px;
   max-width: 768px;
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     padding-left: 5vw;
     padding-right: 5vw;
   }
@@ -15,9 +15,9 @@
   font-weight: 600;
   letter-spacing: 0.2px;
   max-width: 80%;
-  color:white;
+  color: white;
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     max-width: 100%;
   }
 }
@@ -29,96 +29,107 @@
 }
 
 .formContainer {
-    display: flex;
-    justify-content: center;
-    background: black;
+  display: flex;
+  justify-content: center;
+  background: black;
 }
 
 .group {
-    background: black;
-    border-radius: 12;  
+  background: black;
+  border-radius: 12;
 }
 
-.gridContainer{
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 
-    @media(max-width: 1050px) {
-       display: flex;
-       flex-direction: column;
-    }
-}
-
-.graphicContainer{
-    grid-column: span 2;
-    background: black;
-    height: 100%;
+  @media (max-width: 1050px) {
     display: flex;
-    justify-content: center;
-
-    @media(max-width: 1050px) {
-        height: 100%;
-     }
+    flex-direction: column;
+  }
 }
 
-.imageContainer{
+.graphicContainer {
+  grid-column: span 2;
+  background: black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 1050px) {
     height: 100%;
-    width: 80%;
-
-    @media(max-width: 1050px) {
-        height: 30vh;
-        padding-left: 0;
-        padding: 0;
-        display: block;
-        width: 100%;
-     }
+  }
 }
 
-.imageGraphic{
-    object-fit: cover; 
-    width: 100%; 
-    height: 100%;
+.imageContainer {
+  height: 100%;
+  width: 80%;
+
+  @media (max-width: 1050px) {
+    height: 30vh;
+    padding-left: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
 }
 
-.eventDetailHeading{
-    color: var(--color-green);
-    font-family: "Parabole";
-    letter-spacing: 0.1rem;
+.imageGraphic {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.caption{
-    font-family: 'Mono';
-    color: white;
+.eventDetailHeading {
+  color: var(--color-green);
+  font-family: "Parabole";
+  letter-spacing: 0.1rem;
+}
+
+.caption {
+  font-family: "Mono";
+  color: white;
+  font-size: 12px;
+}
+
+.eventDetailsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.eventInformationCaption {
+  max-width: 90%;
+}
+
+.mainHeading {
+  margin-top: 22;
+  font-family: "Parabole";
+  color: var(--color-green);
+
+  @media (max-width: 768px) {
     font-size: 12px;
+  }
 }
 
-.eventDetailsGrid{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.eventInformationCaption{
-    max-width: 90%;    
-}
-
-.mainHeading{
-    margin-top: 22;
-    font-family: 'Parabole';
-    color: var(--color-green);
-
-    @media(max-width: 768px) {
-       font-size: 12px;
-     }
-}
-
-.successContainer{
-    height: 100vh;
+.successContainer {
+  height: 100vh;
 }
 
 .eventInformation {
-    margin-top: 80px;
+  margin-top: 80px;
 
-    @media(max-width: 768px) {
-        margin-top: 40px;
-    }
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
+}
+
+.successText {
+  color: white;
+  font-size: 20px;
+  font-family: Mono;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
