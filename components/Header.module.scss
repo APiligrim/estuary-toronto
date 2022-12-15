@@ -1,11 +1,10 @@
-.container{
-    height: 88vh;
-    position: sticky;
-    position: -webkit-sticky;
-    z-index: 3;
+.container {
+  height: 80vh;
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: 3;
 }
 
-.canvas{
-//    background: var(--color-green);
-background: black;
+.canvas {
+  background: black;
 }

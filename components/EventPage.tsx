@@ -1,8 +1,8 @@
-import React from "react";
-import Banner from "./Banner";
-import Header from "./Header";
-import Navbar from "./Navbar";
-import styles from "@components/EventPage.module.scss";
+import React from 'react';
+import Banner from './Banner';
+import Header from './Header';
+import Navbar from './Navbar';
+import styles from '@components/EventPage.module.scss';
 
 export default function EventPage() {
   const [loading, setLoading] = React.useState(false);
@@ -20,28 +20,26 @@ export default function EventPage() {
       {loading ? (
         <div className={styles.loaderContainer}>
           <div>
-            <img
-              style={{ marginBottom: "16px" }}
-              height="150px"
-              src="https://user-images.githubusercontent.com/28320272/207926159-43254cac-1828-4a54-95d0-04ed040f932a.png"
-            />
+            <img style={{ marginBottom: '16px' }} height="150px" src="https://user-images.githubusercontent.com/28320272/207926159-43254cac-1828-4a54-95d0-04ed040f932a.png" />
             <p
               style={{
-                alignItems: "center",
-                justifyContent: "center",
-                textAlign: "center",
+                alignItems: 'center',
+                justifyContent: 'center',
+                textAlign: 'center',
+                fontFamily: 'Mono',
               }}
             >
-              Loading
+              loading
             </p>
           </div>
         </div>
       ) : (
-        <>
+        <div>
           <Banner />
           <Navbar />
           <Header />
-        </>
+          <Banner />
+        </div>
       )}
     </div>
   );

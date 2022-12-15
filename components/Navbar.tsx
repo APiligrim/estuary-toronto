@@ -45,7 +45,7 @@ function DesktopNav({ navItems }) {
   return (
     <div className={styles.navbar}>
       <a href={'/'} style={{ textDecoration: 'none', color: 'var(--color-green)', fontFamily: 'Parabole', fontSize: '28px', letterSpacing: '.1rem', cursor: 'pointer' }}>
-        ✦ party.estuary.tech ✦
+        party.estuary.tech
       </a>
 
       <ul className={styles.navMenu}>
