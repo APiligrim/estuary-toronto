@@ -147,7 +147,7 @@
 }
 
 .activeSideNav {
-  top: 120px;
+  top: 15vh;
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -174,7 +174,7 @@
     border-bottom: 1px dashed var(--text-space-gray);
     display: flex;
     font-size: 14px;
-    height: 80px;
+    height: 10vh;
     justify-content: space-between;
     overflow: hidden;
     padding: 30px 5vw;
