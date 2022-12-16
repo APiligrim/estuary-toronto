@@ -38,7 +38,7 @@ export default function EventPage() {
           <Banner />
           <Navbar />
           <Header />
-          <Banner />
+          <Banner scrollRight={true} />
         </div>
       )}
     </div>
