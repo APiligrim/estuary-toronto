@@ -75,19 +75,28 @@
 }
 
 .imageGraphic {
-  object-fit: cover;
   width: 100%;
   height: 100%;
+
+  @media (max-width: 1050px) {
+    padding-left: 25vw;
+    padding-right: 25vw;
+  }
+
+  @media (max-width: 768px) {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
 }
 
 .eventDetailHeading {
   color: var(--color-green);
-  font-family: "Parabole";
+  font-family: 'Parabole';
   letter-spacing: 0.1rem;
 }
 
 .caption {
-  font-family: "Mono";
+  font-family: 'Mono';
   color: white;
   font-size: 12px;
 }
@@ -103,7 +112,7 @@
 
 .mainHeading {
   margin-top: 22;
-  font-family: "Parabole";
+  font-family: 'Parabole';
   color: var(--color-green);
 
   @media (max-width: 768px) {
