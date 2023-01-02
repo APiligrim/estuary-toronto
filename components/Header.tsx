@@ -55,7 +55,7 @@ function Header(props: any) {
       >
         <OrbitControls enableZoom={false} />
 
-        <directionalLight castShadow position={[1, 2, 3]} intensity={0.8} />
+        <directionalLight castShadow position={[1, 2, 3]} intensity={1.4} />
         <ambientLight intensity={0.2} color="green" />
         <Float>
           <Text color="limegreen" textAlign="center" maxWidth={8} fontSize={0.2} position-y={3} font="/Parabole_Regular.json">
