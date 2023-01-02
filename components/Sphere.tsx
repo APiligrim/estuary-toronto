@@ -6,7 +6,7 @@ export default () => {
   const Sphere = () => {
     const ref = useRef();
 
-    const base = useTexture({ map: 'estuary.png' });
+    const base = useTexture({ map: 'estuary--gray.png' });
 
     useFrame(({ clock }) => {
       // @ts-ignore
