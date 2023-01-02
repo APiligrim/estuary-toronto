@@ -4,7 +4,7 @@ import Sphere from './Sphere';
 export default function Experience() {
   return (
     <mesh castShadow receiveShadow>
-      <ambientLight intensity={0.1} />
+      <ambientLight intensity={1} />
       <Blob position={[-2, -0.5, -3]} />
       <Blob position={[-2, 1.5, 2]} />
       <Blob position={[2, 1, 4]} />
