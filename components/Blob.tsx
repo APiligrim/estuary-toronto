@@ -21,11 +21,7 @@ export default function Blob({
     ref.current.position.y = Math.sin(clock.elapsedTime + rand * 100) * 0.1 - 0.2;
 
     if (displaceRef.current.strength !== strength.current) {
-      displaceRef.current.strength = MathUtils.lerp(
-        displaceRef.current.strength, //
-        strength.current,
-        0.1
-      );
+      displaceRef.current.strength = MathUtils.lerp(displaceRef.current.strength, strength.current, 0.1);
     }
 
     if (strength.current > 0) {
@@ -35,7 +31,7 @@ export default function Blob({
 
   return (
     <group {...props}>
-      <Sphere castShadow onPointerEnter={() => (strength.current = 0.2)} onPointerLeave={() => (strength.current = 0)} ref={ref} args={[0.7, 128, 128]}>
+      <Sphere castShadow onPointerEnter={() => (strength.current = 0.4)} onPointerLeave={() => (strength.current = 0)} ref={ref} args={[0.9, 128, 128]}>
         <LayerMaterial color={'green'} lighting={'physical'} transmission={1} roughness={0.1} thickness={2}>
           <Depth near={0.4854} far={0.7661999999999932} origin={[-0.4920000000000004, 0.4250000000000003, 0]} colorA={'#76FF02'} colorB={'#76FF02'} />
           <Displace ref={displaceRef} strength={0} scale={5} offset={[0.09189000000357626, 0, 0]} />
