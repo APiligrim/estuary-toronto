@@ -15,6 +15,8 @@ export default function EventPage() {
     }, 2000);
   }, []);
 
+  const navItems = [{ name: 'Apply for an Invite', href: '/apply' }];
+
   return (
     <div>
       {loading ? (
@@ -36,7 +38,7 @@ export default function EventPage() {
       ) : (
         <div>
           <Banner />
-          <Navbar />
+          <Navbar navItems={navItems} />
           <Header />
           <Banner scrollRight={true} />
         </div>
