@@ -5,6 +5,7 @@ import App from '@root/components/App';
 import Banner from '@root/components/Banner';
 import Button from '@root/components/Button';
 import Input from '@root/components/Input';
+import Navbar from '@root/components/Navbar';
 import Textarea from '@root/components/Textarea';
 import React from 'react';
 
@@ -34,6 +35,7 @@ function ApplyPage(props) {
       active="get-an-invite"
     >
       <Banner />
+      <Navbar navItems={null} />
       <div className={styles.formContainer}>
         {state.success ? (
           <div className={U.classNames(styles.group, rstyles.block, styles.successContainer)}>
