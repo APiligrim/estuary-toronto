@@ -122,7 +122,7 @@ function ApplyPage(props) {
                       }}
                       href={'https://cliotoronto.com/spaces/'}
                     >
-                      <p className={styles.caption}>Smart Casual</p>
+                      <p className={styles.caption}>Cocktail Attire</p>
                     </a>
                   </div>
                 </div>
