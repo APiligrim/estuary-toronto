@@ -126,12 +126,15 @@ function ApplyPage(props) {
                     </a>
                   </div>
                 </div>
-
                 <p className={styles.eventInformationCaption} style={{ fontSize: '16px', fontFamily: 'Mono' }}>
                   {' '}
-                  Please fill out this form to apply to be invited. You will receive confirmation within 48 hours if your application has been accepted.
+                  Our apllications have now been closed.
                 </p>
-
+                {/* <p className={styles.eventInformationCaption} style={{ fontSize: '16px', fontFamily: 'Mono' }}>
+                  {' '}
+                  Please fill out this form to apply to be invited. You will receive confirmation within 48 hours if your application has been accepted.
+                </p> */}
+                {/* 
                 <div className={styles.title} style={{ marginTop: 48 }}>
                   Full Name
                 </div>
@@ -226,7 +229,7 @@ function ApplyPage(props) {
                   >
                     Submit
                   </Button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
