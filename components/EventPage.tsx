@@ -15,7 +15,7 @@ export default function EventPage() {
     }, 2000);
   }, []);
 
-  const navItems = [{ name: 'Apply for an Invite', href: '/apply' }];
+  const navItems = [];
 
   return (
     <div>

@@ -1,6 +1,6 @@
 import styles from '@components/Footer.module.scss';
 
-function FooterLink({ children, href }: { href: string, children: React.ReactNode }) {
+function FooterLink({ children, href }: { href: string; children: React.ReactNode }) {
   return (
     <li className={styles.listItemLink}>
       <a className={styles.footerLink} style={{ textDecoration: 'none' }} href={href} target="_blank">
@@ -13,7 +13,6 @@ function FooterLink({ children, href }: { href: string, children: React.ReactNod
 function Footer() {
   return (
     <footer className={styles.footer}>
-      {/* <p>Storage for the New Internet</p> */}
       <section className={styles.container}>
         <div className={styles.footerColumn} style={{ borderRight: '1px dashed var(--text-space-gray)' }}>
           <h4 className={styles.footerHeading}>Learn more</h4>
