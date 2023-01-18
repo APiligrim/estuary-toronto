@@ -11,14 +11,14 @@ import Sphere from './Sphere';
 
 function Header(props: any) {
   const [loaded, setLoaded] = useState(false);
-  const [timedPopup, setTimedPopup] = useState(false);
+  // const [timedPopup, setTimedPopup] = useState(false);
   const font = '/Parabole-Regular.wof';
 
-  useEffect(() => {
-    setTimeout(() => {
-      setTimedPopup(true);
-    }, 7000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setTimedPopup(true);
+  //   }, 7000);
+  // }, []);
 
   const marbles = useRef();
   const marblesCount = 50;
@@ -58,13 +58,13 @@ function Header(props: any) {
         <directionalLight castShadow position={[1, 2, 3]} intensity={1.3} />
         <ambientLight intensity={0.3} color="green" />
         <Float>
-          <Text color="limegreen" textAlign="center" maxWidth={8} fontSize={0.2} position-y={3} font="/Parabole_Regular.json">
-            {' '}
-            January 24th, 2023
-          </Text>
           <Text color="limegreen" textAlign="center" maxWidth={8} fontSize={0.2} position-y={2.5} font="/Parabole_Regular.json">
             {' '}
-            7pm - 10pm EST @ CLIO, Toronto
+            January 24th, 2023 from 7pm - 10pm EST @ CLIO, Toronto
+          </Text>
+          <Text color="limegreen" textAlign="center" maxWidth={8} fontSize={0.2} position-y={3} font="/Parabole_Regular.json">
+            {' '}
+            Applications Are Now Closed
           </Text>
         </Float>
 
@@ -92,7 +92,7 @@ function Header(props: any) {
         </Physics>
       </Canvas>
 
-      <Popup trigger={timedPopup} setTrigger={setTimedPopup} />
+      {/* <Popup trigger={timedPopup} setTrigger={setTimedPopup} /> */}
       {loaded && <SocialTag />}
     </div>
   );

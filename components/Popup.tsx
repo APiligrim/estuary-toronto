@@ -38,9 +38,9 @@ export default function Popup(props) {
             </a>
           </p>
 
-          <Button href="/apply" style={{ marginTop: '16px', marginBottom: '16px', width: '200px', fontFamily: 'Arial', boxShadow: '0 5px 15px rgba(166, 213, 148, 0.386)' }}>
+          {/* <Button href="/apply" style={{ marginTop: '16px', marginBottom: '16px', width: '200px', fontFamily: 'Arial', boxShadow: '0 5px 15px rgba(166, 213, 148, 0.386)' }}>
             Apply for an Invite
-          </Button>
+          </Button> */}
         </div>
       </section>
     </div>
