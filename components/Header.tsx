@@ -60,7 +60,7 @@ function Header(props: any) {
         <Float>
           <Text color="limegreen" textAlign="center" maxWidth={8} fontSize={0.2} position-y={2.5} font="/Parabole_Regular.json">
             {' '}
-            January 24th, 2023 from 7pm - 10pm EST @ CLIO, Toronto
+            January 24th, 2023 from 7pm - 10pm @ CLIO, Toronto
           </Text>
           <Text color="limegreen" textAlign="center" maxWidth={8} fontSize={0.2} position-y={3} font="/Parabole_Regular.json">
             {' '}
